@@ -60,10 +60,14 @@ void bookCar(){
     else printf("\n\nCar not available, please try booking another car\n\n");
 }
 
-void GenerateBill(){
+void GenerateBill() {
     ta=na+na*0.05;
-    printf("\n\nNet amount=Rs.%i\n\nGST=5%%\n\nTotal amount=Rs.%i\n\n",na,ta);
+    printf("\n\nGenerating Bill...\n");
+    printf("%-20s%-15s%-15s%-15s%-15s\n", "Car Name", "Days Booked", "Rent/Day", "GST (%)", "Total");
+    printf("%-20s%-15i%-15i%-15.2f%-15.2f\n", c[bc-1].n,nod,c[bc-1].rc,5.0,ta);
+    printf("\nThank you for using our car rental service!\n");
 }
+
 
 int main(){
     while(1){
