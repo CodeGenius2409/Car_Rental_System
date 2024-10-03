@@ -1,2 +1,2 @@
 # Car_Rental_System
-This system can add cars, display cars, book cars, generate bills and exit at the end.
+This C program manages a car rental service. It allows users to add car details (name, seats, rent, and availability), view all cars, book a car, and generate a bill with GST. The program stores data for up to 50 cars using a struct. Cars can be marked as available or unavailable after booking. It also calculates the total cost based on the number of rental days. The menu-driven interface lets users perform these tasks in a loop until they choose to exit. Error handling ensures valid car status entries and restricts actions if fewer than 3 cars are added.
